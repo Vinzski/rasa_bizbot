@@ -123,7 +123,7 @@ simple-websocket==1.0.0
 six==1.16.0
 sklearn-crfsuite==0.3.6
 slack_sdk==3.33.1
-SQLAlchemy==1.4.54
+sqlalchemy<2.0
 structlog==23.3.0
 structlog-sentry==2.1.0
 tabulate==0.9.0
