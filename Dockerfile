@@ -19,4 +19,4 @@ USER 1001  # Ensure this matches the non-root user UID used in the Rasa image
 # Expose the port for Rasa
 EXPOSE 5005
 # Start the Rasa server
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "8080"]
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "5000"]
