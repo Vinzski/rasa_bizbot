@@ -26,5 +26,5 @@ USER 1001
 # Expose port for Rasa
 EXPOSE 5005
 
-# Run the Rasa server
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "5005"]
+# # Run the Rasa server
+# CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "5005"]
