@@ -1,21 +1,13 @@
-FROM python:3.8-slim
+FROM rasa/rasa:latest
 
-# Set environment variables
-ENV PYTHONUNBUFFERED=1 \
-    PYTHONDONTWRITEBYTECODE=1
+# Copy the Rasa project into the Docker image
+COPY . /app
 
-# Set working directory
-WORKDIR /app
-
-# Install dependencies
-COPY requirements.txt /app/
+# Install any additional dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the Rasa project
-COPY . /app/
-
-# Expose the port Rasa will use
+# Expose the port Rasa will run on
 EXPOSE 5005
 
 # Run the Rasa server
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "5005"]
+CMD ["run", "-m", "models", "--enable-api", "--cors", "*"]
