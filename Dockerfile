@@ -24,7 +24,7 @@ RUN chown -R 1001:1001 /app
 USER 1001
 
 # Expose port for Rasa
-EXPOSE 5000
+EXPOSE 5005
 
 # Run the Rasa server
 CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "5005"]
