@@ -1,0 +1,167 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_help
+  - ask_joke
+  - give_compliment
+  - make_complaint
+
+  #CLOTHING
+  - ask_about_fashion_trends
+  - ask_about_popular_clothing_brands
+  - ask_about_fashion_influencers
+  - ask_about_sustainable_fashion
+  - ask_about_fashion_history
+  - ask_about_fashion_in_different_cultures
+  - ask_about_fashion_and_technology
+  - ask_about_fashion_and_social_media
+  - ask_about_fashion_for_occasion
+  - ask_about_clothing_in_the_future
+
+  #FOOD
+  - ask_about_food_types
+  - ask_about_food_preparation
+  - ask_about_food_trends
+  - ask_about_food_storage
+  - ask_about_popular_restaurants
+
+  #ELECTRONICS
+
+  - ask_about_device_types
+  - ask_about_device_usage
+  - ask_about_tech_trends
+  - ask_about_device_maintenance
+  - ask_about_electronics_stores
+  - ask_about_device_compatibility
+  - ask_about_warranties_and_returns
+  - ask_about_financing_options
+
+slots:
+  location:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: location
+
+actions:
+  - action_get_weather
+
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+    - text: "Hello! How are you feeling today?"
+
+  utter_cheer_up:
+    - text: "I'm sorry to hear that. I'm here to help you. 🙁"
+
+  utter_happy:
+    - text: "Great, carry on!"
+    - text: "Awesome! It's good to see you happy. 😊"
+
+  utter_goodbye:
+    - text: "Goodbye! I hope to speak with you again soon."
+
+  utter_affirm:
+    - text: "That's great to hear! How can I assist you further?"
+
+  utter_deny:
+    - text: "I understand. Please tell me how I can help you better."
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_ask_help:
+    - text: "Sure, I'm here to help! What do you need assistance with?"
+
+  utter_tell_joke:
+    - text: "Why don't scientists trust atoms? Because they make up everything!"
+
+  utter_handle_complaint:
+    - text: "I'm sorry to hear that. Please tell me more about the issue."
+
+  utter_receive_compliment:
+    - text: "Thank you! I'm glad you're happy with the service. Is there anything else I can do for you?"
+
+  #CLOTHING
+
+  utter_ask_about_fashion_trends:
+    - text: "The latest fashion trends include oversized clothing, bold prints, vintage styles, and sustainable fashion. It’s all about comfort, individuality, and eco-consciousness these days."
+
+  utter_ask_about_popular_clothing_brands:
+    - text: "Some of the most popular clothing brands right now are Gucci, Louis Vuitton, Zara, H&M, and Supreme. These brands are not only widely recognized but also set trends in the industry."
+
+  utter_ask_about_fashion_influencers:
+    - text: "Top fashion influencers include people like Chiara Ferragni, Danielle Peazer, and Alexa Chung. They’re shaping trends across platforms like Instagram and YouTube."
+
+  utter_ask_about_sustainable_fashion:
+    - text: "Sustainable fashion focuses on clothing that’s produced in an environmentally friendly way. Brands like Patagonia, Stella McCartney, and Reformation are pioneers in this area, offering eco-conscious collections."
+
+  utter_ask_about_fashion_history:
+    - text: "Fashion has a rich history, with notable movements like the Victorian era, the Roaring 20s, and the ‘60s counterculture. Each era had its unique style that influenced today’s fashion."
+
+  utter_ask_about_fashion_in_different_cultures:
+    - text: "Fashion varies greatly across cultures. For example, Japanese street fashion is known for its eclectic mix, while traditional Indian clothing often features intricate patterns and bright colors."
+
+  utter_ask_about_fashion_and_technology:
+    - text: "Technology is rapidly influencing fashion with innovations like 3D-printed clothing, smart fabrics, and virtual fashion shows. The future of fashion looks high-tech and sustainable."
+
+  utter_ask_about_fashion_and_social_media:
+    - text: "Social media platforms, especially Instagram and TikTok, play a huge role in influencing fashion trends. They allow brands and influencers to showcase styles and reach a global audience instantly."
+
+  utter_ask_about_fashion_for_occasion:
+    - text: "For formal events, a well-tailored suit or elegant dress is ideal. For casual outings, you can go for comfort with denim, a T-shirt, and stylish sneakers. It all depends on the occasion!"
+
+  utter_ask_about_clothing_in_the_future:
+    - text: "In the future, we might see more wearable tech, like clothes that adjust to your body temperature or change colors. Fashion could also become more sustainable, with upcycled and biodegradable materials becoming the norm."
+
+#FOOD
+
+  utter_ask_about_food_types:
+    - text: "There are various types of food categories such as fruits, vegetables, grains, proteins, and dairy. Each category has subcategories like leafy vegetables, legumes, and different kinds of fruits like citrus, berries, and tropical fruits."
+
+  utter_ask_about_food_preparation:
+    - text: "Food can be prepared using different methods like boiling, grilling, frying, baking, steaming, and sautéing. Each cooking method brings out unique flavors and textures."
+
+  utter_ask_about_food_trends:
+    - text: "Food trends often change over time, but right now, plant-based foods, sustainable sourcing, and fusion cuisine are gaining popularity. Many people are also exploring global flavors."
+
+  utter_ask_about_food_storage:
+    - text: "Food should be stored properly to maintain its freshness. Refrigerate perishable items, store dry goods in cool, dry places, and make sure to label leftovers with dates for easy tracking."
+   
+  utter_ask_about_popular_restaurants:
+    - text: "Some popular restaurants right now include chains like McDonald's, Starbucks, KFC, and Chipotle. In local settings, it varies by location, but some renowned ones in major cities include Nobu, The Cheesecake Factory, and Shake Shack."
+
+#ELECTRONICS
+
+  utter_ask_device_type:
+    - text: "There are a wide array of devices including smartphones, laptops, tablets, smartwatches, and more. Each is designed to suit different user needs and preferences."
+  utter_ask_usage:
+    - text: "Devices today serve a multitude of purposes such as communication, entertainment, productivity, and personal health monitoring."
+  utter_ask_tech_trends:
+    - text: "Recent trends in technology include the expansion of 5G networks, developments in artificial intelligence, and the integration of smart technology into home appliances."
+  utter_ask_maintenance:
+    - text: "Maintaining your device involves regular updates, proper charging, and cleaning, along with careful handling to extend its lifespan."
+  utter_ask_stores:
+    - text: "Electronics are available at various retail outlets, both online and physical stores, offering a range of products from budget to premium brands."
+  utter_ask_compatibility:
+    - text: "Electronics are available at various retail outlets, both online and physical stores, offering a range of products from budget to premium brands."
+  utter_ask_warranty_return:
+    - text: "Our products come with a standard warranty for defects. Additionally, customers can return products within a specified period under our return policy."
+  utter_ask_financing:
+    - text: "There are various financing options to accommodate different budgets, allowing for easier payment methods over time."
+
+  utter_ask_location:
+    - text: "In which city do you want to know the weather?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

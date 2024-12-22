@@ -1,0 +1,148 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - intent: deny
+  - action: utter_deny
+
+- story: User asks for help
+  steps:
+  - intent: ask_help
+  - action: utter_ask_help
+
+- story: User asks for a joke
+  steps:
+  - intent: ask_joke
+  - action: utter_tell_joke
+
+- story: User makes a complaint
+  steps:
+  - intent: make_complaint
+  - action: utter_handle_complaint
+
+- story: User gives a compliment
+  steps:
+  - intent: give_compliment
+  - action: utter_receive_compliment
+
+#CLOTHING
+
+- story: User asks about fashion trends
+  steps:
+  - intent: ask_about_fashion_trends
+  - action: utter_ask_about_fashion_trends
+
+- story: User asks about popular clothing brands
+  steps:
+  - intent: ask_about_popular_clothing_brands
+  - action: utter_ask_about_popular_clothing_brands
+
+- story: User asks about fashion influencers
+  steps:
+  - intent: ask_about_fashion_influencers
+  - action: utter_ask_about_fashion_influencers
+
+- story: User asks about sustainable fashion
+  steps:
+  - intent: ask_about_sustainable_fashion
+  - action: utter_ask_about_sustainable_fashion
+
+- story: User asks about fashion history
+  steps:
+  - intent: ask_about_fashion_history
+  - action: utter_ask_about_fashion_history
+
+- story: User asks about fashion in different cultures
+  steps:
+  - intent: ask_about_fashion_in_different_cultures
+  - action: utter_ask_about_fashion_in_different_cultures
+
+- story: User asks about fashion and technology
+  steps:
+  - intent: ask_about_fashion_and_technology
+  - action: utter_ask_about_fashion_and_technology
+
+- story: User asks about fashion and social media
+  steps:
+  - intent: ask_about_fashion_and_social_media
+  - action: utter_ask_about_fashion_and_social_media
+
+- story: User asks about fashion for occasion
+  steps:
+  - intent: ask_about_fashion_for_occasion
+  - action: utter_ask_about_fashion_for_occasion
+
+- story: User asks about clothing in the future
+  steps:
+  - intent: ask_about_clothing_in_the_future
+  - action: utter_ask_about_clothing_in_the_future
+
+#FOOD
+
+- story: ask about food types
+  steps:
+    - intent: ask_about_food_types
+    - action: utter_ask_about_food_types
+
+- story: ask about food preparation
+  steps:
+    - intent: ask_about_food_preparation
+    - action: utter_ask_about_food_preparation
+
+- story: ask about food trends
+  steps:
+    - intent: ask_about_food_trends
+    - action: utter_ask_about_food_trends
+
+- story: ask about food storage
+  steps:
+    - intent: ask_about_food_storage
+    - action: utter_ask_about_food_storage
+
+- story: ask about popular restaurants
+  steps: 
+    - intent: ask_about_popular_restaurants
+    - action: utter_ask_about_popular_restaurants
+
+- story: User asks about device types and then tech trends
+  steps:
+    - intent: ask_about_device_types
+    - action: utter_ask_device_type
+    - intent: ask_about_tech_trends
+    - action: utter_ask_tech_trends
+
+- story: User inquires about device maintenance then warranties
+  steps:
+    - intent: ask_about_device_maintenance
+    - action: utter_ask_maintenance
+    - intent: ask_about_warranties_and_returns
+    - action: utter_ask_warranty_return
+
+- story: User needs financing options information
+  steps:
+    - intent: ask_about_financing_options
+    - action: utter_ask_financing
+
+

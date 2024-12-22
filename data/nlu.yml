@@ -1,0 +1,480 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - yo
+    - wazzup
+    - hello buddy
+    - heya
+    - hey there
+    - what's up
+
+- intent: goodbye
+  examples: |
+    - cu
+    - byebye
+    - good bye
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - ciao
+    - cya
+    - talk to you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - absolutly 
+    - affirmative
+    - understood
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - negative
+    - nah
+    - nope 
+    - nop
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - Good
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a bot or a human>
+
+- intent: ask_help
+  examples: |
+    - Can you help me?
+    - I need assistance
+    - How does this work?
+    - What can you do?
+
+- intent: ask_joke
+  examples: |
+    - Tell me a joke
+    - I need to laugh
+    - Can you say something funny?
+
+- intent: make_complaint
+  examples: |
+    - I have a complaint
+    - Something went wrong
+    - I'm not happy with the service
+
+- intent: give_compliment
+  examples: |
+    - You're doing great
+    - I love this service
+    - Thanks for your help
+    - Awesome job
+    - You’ve been very helpful
+    - This is fantastic, thank you
+    - Great support! Thanks a lot
+    - Couldn’t have done it without you
+    - You guys rock
+    - What a wonderful experience
+    - I really appreciate all the help
+    - That was excellent customer service
+    - Kudos to the team
+    - You’re the best
+    - Thank you for the quick response
+    - I’m impressed with your service
+
+#CLOTHING 
+
+- intent: ask_about_fashion_trends
+  examples: |
+    - What are the latest fashion trends?
+    - What’s trending in the world of fashion?
+    - Can you tell me about current fashion trends?
+    - What should I wear this season?
+    - Are there any new fashion trends I should know about?
+    - What's hot in fashion right now?
+    - What's the current fashion vibe?
+    - Which fashion trends are making a comeback?
+    - What are the biggest fashion trends for this year?
+    - What are the key styles for this season?
+    - What are people wearing in 2024?
+    - Any fashion trends for spring or summer?
+
+- intent: ask_about_popular_clothing_brands
+  examples: |
+    - Which clothing brands are popular right now?
+    - What are some of the most popular clothing brands?
+    - What are the top clothing brands at the moment?
+    - Who makes the most famous clothing right now?
+    - What are some well-known fashion labels?
+    - Which fashion brands are trending this year?
+    - What are the best-known clothing brands in the world?
+    - What are the luxury fashion brands people talk about?
+    - What are the top streetwear brands?
+    - Which brands are dominating the fashion scene today?
+    - What are the best clothing brands for men/women?
+
+- intent: ask_about_fashion_influencers
+  examples: |
+    - Who are the top fashion influencers?
+    - Can you tell me about popular fashion influencers?
+    - Who is setting the trends in fashion today?
+    - Which fashion influencers should I follow?
+    - Who are the most influential fashion bloggers?
+    - What fashion influencers are trending on Instagram?
+    - Can you tell me about some up-and-coming fashion influencers?
+    - Which influencers are changing the fashion industry?
+    - Who are the famous fashion influencers of 2024?
+    - Who influences fashion on YouTube or TikTok?
+
+- intent: ask_about_sustainable_fashion
+  examples: |
+    - What is sustainable fashion?
+    - How can I shop for clothes ethically?
+    - What are some brands that focus on sustainable fashion?
+    - Tell me about eco-friendly clothing options.
+    - Is sustainable fashion important?
+    - Why should I care about sustainable fashion?
+    - What makes fashion sustainable?
+    - Can you give me examples of sustainable fashion brands?
+    - How can I tell if a brand is sustainable?
+    - What materials are used in sustainable clothing?
+    - What are some sustainable fashion trends?
+    - Why is sustainability so important in fashion today?
+
+- intent: ask_about_fashion_history
+  examples: |
+    - Can you tell me about the history of fashion?
+    - How has fashion evolved over time?
+    - What were the fashion trends in the 80s?
+    - What are some historical fashion movements?
+    - How did fashion change in the 20th century?
+    - What were the major fashion trends of the 60s and 70s?
+    - How did fashion change after World War II?
+    - Who are the most important designers in fashion history?
+    - What fashion trends shaped the 20th century?
+    - What was the fashion scene like in the 1920s?
+
+- intent: ask_about_fashion_in_different_cultures
+  examples: |
+    - How do different cultures influence fashion?
+    - Can you tell me about fashion trends in different countries?
+    - What are the traditional clothing styles in various cultures?
+    - How do fashion trends vary around the world?
+    - What is the influence of African fashion on global trends?
+    - What are the fashion trends in Japan?
+    - Can you tell me about Indian fashion?
+    - How do cultural heritage and fashion go hand in hand?
+    - What role does cultural diversity play in fashion today?
+    - How do cultures from the East and West influence each other in fashion?
+
+- intent: ask_about_fashion_and_technology
+  examples: |
+    - How is technology influencing fashion?
+    - What is the role of technology in the fashion industry?
+    - Can you tell me about smart clothing?
+    - What are some innovations in fashion technology?
+    - How is AI used in fashion design?
+    - What are wearables in fashion?
+    - Can technology help make fashion more sustainable?
+    - What role does 3D printing play in fashion?
+    - How is virtual reality changing the fashion industry?
+    - What is digital fashion?
+    - How does technology help create custom clothing?
+
+- intent: ask_about_fashion_and_social_media
+  examples: |
+    - How does social media affect fashion trends?
+    - What role does Instagram play in fashion today?
+    - Can you tell me about fashion influencers on social media?
+    - How does TikTok influence the fashion world?
+    - What is the impact of social media on fashion marketing?
+    - How does fashion go viral on platforms like Instagram?
+    - How are fashion trends driven by social media?
+    - How do influencers change the way we shop for clothes?
+    - What role does social media play in fashion brand recognition?
+    - How does Pinterest influence fashion ideas?
+
+- intent: ask_about_fashion_for_occasion
+  examples: |
+    - What should I wear for a formal event?
+    - What is the best outfit for a casual outing?
+    - What should I wear for a date night?
+    - What are some outfit ideas for a job interview?
+    - What is the best outfit for a wedding?
+    - What are the best outfits for a beach party?
+    - What should I wear for a birthday celebration?
+    - What’s the perfect outfit for a night out with friends?
+    - How do I dress for a cocktail party?
+    - What’s an appropriate outfit for a funeral?
+
+- intent: ask_about_clothing_in_the_future
+  examples: |
+    - What will clothing look like in the future?
+    - Can you tell me about future fashion trends?
+    - How will fashion change in the next decade?
+    - What are the upcoming innovations in clothing?
+    - How will clothing evolve with technology in the future?
+    - Will we see more sustainable materials in future clothing?
+    - What will fashion look like in 2050?
+    - How will fashion adapt to climate change?
+    - Can clothing become completely recyclable in the future?
+    - What will smart fabrics be like in the future?
+
+#FOOD
+
+- intent: ask_about_food_types
+  examples: |
+    - What types of food are there?
+    - Can you tell me about different food categories?
+    - What kinds of foods exist?
+    - How many types of food are there?
+    - What are the different kinds of meals I can choose from?
+    - Can you explain the different food types?
+    - What are some popular food options?
+    - What food varieties should I know about?
+    - Can you list the types of food available?
+    - What types of meals can be prepared?
+
+- intent: ask_about_food_preparation
+  examples: |
+    - How is food typically prepared?
+    - What are some common cooking methods?
+    - How do people usually prepare their meals?
+    - What’s the best way to cook this type of food?
+    - Can you explain how food is generally made?
+    - What are common cooking techniques for different foods?
+    - How do you prepare a certain dish?
+    - What’s the process of making food from scratch?
+    - How is food typically served after preparation?
+    - Can you tell me about various food preparation styles?
+
+- intent: ask_about_food_trends
+  examples: |
+    - What are the current food trends?
+    - How has food culture changed in recent years?
+    - What are some trending foods right now?
+    - Can you tell me about food innovations this year?
+    - What food trends are emerging this season?
+    - What’s popular in the food world at the moment?
+    - How have food preferences evolved over time?
+    - Are there any new food trends I should know about?
+    - What are people eating these days?
+    - What’s the latest in the food scene?
+
+- intent: ask_about_food_storage
+  examples: |
+    - How should I store food to keep it fresh?
+    - Can you tell me the best way to store ingredients?
+    - What’s the proper way to store food at home?
+    - How do I store leftovers?
+    - What’s the best way to preserve food for a long time?
+    - Can you give tips on how to store food correctly?
+    - How do I store perishable items?
+    - What are the best food storage practices?
+    - How should I store food in the fridge?
+    - What’s the right temperature to store certain foods?
+
+- intent: ask_about_popular_restaurants
+  examples: |
+    - What are some popular restaurants right now?
+    - Can you tell me about popular restaurant chains?
+    - What are the top restaurant brands at the moment?
+    - Which restaurant chains are trending these days?
+    - What are the most famous fast food chains?
+    - Can you recommend any well-known restaurants?
+    - Which restaurants are popular in this area?
+    - What are some global fast food chains?
+    - Can you name some international restaurant brands?
+    - Which restaurants should I try if I want something familiar?
+
+#ELECTRONICS
+
+- intent: ask_about_device_types
+  examples: |
+    - What types of electronics are there?
+    - Can you tell me about different categories of gadgets?
+    - What kinds of devices exist?
+    - How many types of electronic devices are there?
+    - What are the different kinds of electronics I can choose from?
+    - Can you explain the different device types?
+    - What are some popular gadget options?
+    - What device varieties should I know about?
+    - Can you list the types of devices available?
+    - What types of electronic items can be purchased?
+
+- intent: ask_about_device_usage
+  examples: |
+    - How is this device typically used?
+    - What are some common usage scenarios for this gadget?
+    - How do people usually use this kind of device?
+    - What’s the best way to use this type of electronics?
+    - Can you explain how this device is generally used?
+    - What are common functionalities for different devices?
+    - How do you operate a certain gadget?
+    - What’s the process of setting up this device?
+    - How is this gadget typically maintained?
+    - Can you tell me about various usage styles of this device?
+
+- intent: ask_about_tech_trends
+  examples: |
+    - What are the current technology trends?
+    - How has the tech culture changed in recent years?
+    - What are some trending gadgets right now?
+    - Can you tell me about tech innovations this year?
+    - What tech trends are emerging this season?
+    - What’s popular in the tech world at the moment?
+    - How have device preferences evolved over time?
+    - Are there any new tech trends I should know about?
+    - What are people using these days?
+    - What’s the latest in the tech scene?
+
+- intent: ask_about_device_maintenance
+  examples: |
+    - How should I maintain my device to keep it functional?
+    - Can you tell me the best way to care for electronics?
+    - What’s the proper way to maintain gadgets at home?
+    - How do I handle device repairs?
+    - What’s the best way to clean electronics?
+    - Can you give tips on how to maintain devices correctly?
+    - How do I handle battery replacements?
+    - What are the best practices for electronics upkeep?
+    - How should I handle updates for my devices?
+    - What’s the right way to troubleshoot device issues?
+
+- intent: ask_about_electronics_stores
+  examples: |
+    - What are some popular electronics stores right now?
+    - Can you tell me about major electronics retail chains?
+    - What are the top electronics brands at the moment?
+    - Which electronics stores are trending these days?
+    - What are the most famous electronics markets?
+    - Can you recommend any well-known electronics shops?
+    - Which stores are popular for buying gadgets?
+    - What are some global electronics retail chains?
+    - Can you name some international electronics brands?
+    - Which stores should I visit for the best tech deals?
+
+- intent: ask_about_device_compatibility
+  examples: |
+    - Is this accessory compatible with my device?
+    - Can this software be used on different types of hardware?
+    - How do I know if these components are compatible?
+    - What devices are compatible with this app?
+    - Can you help me find compatible parts for my computer?
+    - What should I check for compatibility issues?
+    - How do I ensure my new devices work together?
+    - Can you list the devices that work with this ecosystem?
+    - What are the compatibility considerations for these gadgets?
+    - Which platforms support this application?
+
+- intent: ask_about_warranties_and_returns
+  examples: |
+    - What is the warranty period for this device?
+    - Can you explain your return policy for electronics?
+    - How do I claim a warranty for my gadget?
+    - What are the terms for returning a device?
+    - How long is the warranty valid for this product?
+    - What does the warranty cover for electronics?
+    - Can I return this item if it's defective?
+    - What are the steps to process a return?
+    - How can I extend the warranty on my electronics?
+    - What are the conditions for warranty claims?
+
+- intent: ask_about_financing_options
+  examples: |
+    - What financing options are available for purchasing gadgets?
+    - Can I buy this device on installment?
+    - What are the credit terms for buying electronics?
+    - How do I apply for financing to buy a gadget?
+    - What are the interest rates for electronics purchases?
+    - Can you explain the payment plans for high-end devices?
+    - How does the financing process work for new technology?
+    - What do I need to qualify for gadget financing?
+    - Are there any promotions on credit purchases for electronics?
+    - How can I finance a large electronics purchase?
+
+- intent: ask_weather
+  examples: |
+    - What is the weather today in [Manila](location)?
+    - What's the weather like in [Cebu](location)?
+    - Tell me the weather in [Davao](location).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
