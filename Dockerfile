@@ -17,6 +17,16 @@ RUN pip install --no-cache-dir --upgrade pip && \
 # Copy the rest of the application files
 COPY . /app
 
+# Suppress SQLAlchemy warnings
+ENV SQLALCHEMY_WARN_20=0
+ENV SQLALCHEMY_SILENCE_UBER_WARNING=1
+
+# Suppress Python warnings
+ENV PYTHONWARNINGS="ignore"
+
+# Suppress pkg_resources warnings
+ENV SETUPTOOLS_USE_DISTUTILS=stdlib
+
 # Set permissions for the non-root user
 RUN chown -R 1001:1001 /app
 
